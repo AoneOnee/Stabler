@@ -179,4 +179,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+# Ignore the warning.png file in the specified directory
 /content/cagliostro-colab-ui/extensions/stable-diffusion-webui-nsfw-filter/warning/warning.png
