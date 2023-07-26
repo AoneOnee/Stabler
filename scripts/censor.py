@@ -94,7 +94,7 @@ class NsfwCheckScript(scripts.Script):
         images = kwargs['images']
         
         # Check if args is not empty and retrieve values, otherwise use default values
-        enable_nsfw_filer, safety_checker_adj = args if args else (True, 0.025)
+        enable_nsfw_filer, safety_checker_adj = args if args else (True, -0.025)
         
         if enable_nsfw_filer is True:
             images[:] = censor_batch(images, safety_checker_adj)[:]
