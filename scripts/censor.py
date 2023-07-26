@@ -103,7 +103,7 @@ class NsfwCheckScript(scripts.Script):
     enable_nsfw_filer.style = {'display': 'none'}
 
     safety_checker_adj = gr.Slider(label="Safety checker adjustment",
-                                   minimum=-0.5, maximum=0.5, value=-0.025, step=0.001,
+                                   minimum=-0.5, maximum=0.5, value=0.025, step=0.001,
                                    elem_id=self.elem_id("safety_checker_adj"))
 
     return [enable_nsfw_filer, safety_checker_adj]
